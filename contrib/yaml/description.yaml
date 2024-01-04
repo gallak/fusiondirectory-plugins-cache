@@ -1,0 +1,32 @@
+information:
+  name: "cache"
+  description: "plugin which allow caching data fetched remotely"
+  version: "0.1"
+  authors: ['antoine.gallavardin@free.fr']
+  status: "dev"
+  screenshotUrl:
+   - https://raw.githubusercontent.com/gallak/fusiondirectory-plugins-cache/master/example.png
+  logoUrl: ""
+  tags: ["cache","configuration"]
+  license: "GPLv2"
+  origin: "source"
+
+support:
+  provider: "community"
+  homeUrl: "https://github.com/gallak/fusiondirectory-plugins-cache"
+  ticketUrl: "https://github.com/gallak/fusiondirectory-plugins-cache/issues"
+  discussionUrl: "https://github.com/gallak/fusiondirectory-plugins-cache/wiki"
+  downloadUrl: "https://github.com/gallak/fusiondirectory-plugins-cache/archive/refs/heads/master.zip"
+  schemaUrl: "https://schemas.fusiondirectory.info/"
+
+requirement:
+  fdVersion: 1.4
+  phpVersion: 7.2.0
+
+content:
+  fileList:
+    - './admin/systems/nut/class_simpleRemotePlugin.inc'
+    - './contrib/yaml/description.yaml'
+    - './contrib/openldap/cacheObject.schema'
+    - './contrib/openldap/cacheObject-fd.schema'
+    - './config/cache/class_cacheConfig.inc'
